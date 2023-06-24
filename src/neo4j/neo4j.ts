@@ -14,6 +14,7 @@ const driver = neo4j.driver(
   neo4j.auth.basic(username, password),
   {
     database: database,
+    disableLosslessIntegers: true
   }
 );
 
